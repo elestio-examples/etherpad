@@ -135,4 +135,4 @@ That's it! With these simple steps, you can easily backup and restore your data 
 
 - <a target="_blank" href="https://etherpad.org/doc/v1.9.1/">Etherpad documentation</a>
 
-- <a target="_blank" href="https://github.com/elestio-examples/etherpad">Elestio/espocrm Github repository</a>
+- <a target="_blank" href="https://github.com/elestio-examples/etherpad">Elestio/etherpad Github repository</a>
