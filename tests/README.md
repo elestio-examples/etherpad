@@ -8,7 +8,7 @@
 
 # Etherpad, verified and packaged by Elestio
 
-[Espocrm](https://github.com/espocrm/espocrm-docker) is a web application that allows users to see, enter and evaluate all your company relationships regardless of the type. People, companies, projects or opportunities — all in an easy and intuitive interface.
+[Etherpad](https://github.com/espocrm/espocrm-docker) is a web application that allows users to see, enter and evaluate all your company relationships regardless of the type. People, companies, projects or opportunities — all in an easy and intuitive interface.
 
 <img src="https://github.com/elestio-examples/etherpad/raw/main/etherpad.png" alt="etherpad" width="800">
 
