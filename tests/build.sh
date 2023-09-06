@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-docker build . --tag elestio4test/etherpad:latest
+docker buildx build . --output type=docker,name=elestio4test/etherpad:latest | docker load
