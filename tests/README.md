@@ -8,11 +8,11 @@
 
 # Etherpad, verified and packaged by Elestio
 
-[Etherpad](https://github.com/espocrm/espocrm-docker) is a web application that allows users to see, enter and evaluate all your company relationships regardless of the type. People, companies, projects or opportunities — all in an easy and intuitive interface.
+[Etherpad](https://github.com/ether/etherpad-lite) is a real-time collaborative editor scalable to thousands of simultaneous real time users. It provides full data export capabilities, and runs on your server, under your control.
 
 <img src="https://github.com/elestio-examples/etherpad/raw/main/etherpad.png" alt="etherpad" width="800">
 
-Deploy a <a target="_blank" href="https://elest.io/open-source/espocrm">fully managed etherpad</a> on <a target="_blank" href="https://elest.io/">elest.io</a> if you want automated backups, reverse proxy with SSL termination, firewall, automated OS & Software updates, and a team of Linux experts and open source enthusiasts to ensure your services are always safe, and functional.
+Deploy a <a target="_blank" href="https://elest.io/open-source/etherpad">fully managed etherpad</a> on <a target="_blank" href="https://elest.io/">elest.io</a> if you want automated backups, reverse proxy with SSL termination, firewall, automated OS & Software updates, and a team of Linux experts and open source enthusiasts to ensure your services are always safe, and functional.
 
 [![deploy](https://github.com/elestio-examples/esetherpadpocrm/raw/main/deploy-on-elestio.png)](https://dash.elest.io/deploy?source=cicd&social=dockerCompose&url=https://github.com/elestio-examples/etherpad)
 
@@ -42,7 +42,7 @@ Run the project with the following command
 
     docker-compose up -d
 
-You can access the Web UI at: `http://your-domain:8686`
+You can access the Web UI at: `http://your-domain:9001`
 
 ## Docker-compose
 

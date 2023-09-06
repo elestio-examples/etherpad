@@ -1,0 +1,27 @@
+version: "3.5"
+services:
+  etherpad:
+    image: elestio4test/etherpad:${SOFTWARE_VERSION_TAG}
+    # environment:
+    #   - TITLE=${TITLE}
+    #   - DEFAULT_PAD_TEXT=${DEFAULT_PAD_TEXT}
+    #   - DB_TYPE=${DB_TYPE}
+    #   - DB_HOST=${DB_HOST}
+    #   - DB_PORT=${DB_PORT}
+    #   - DB_NAME=${DB_NAME}
+    #   - DB_USER=${DB_USER}
+    #   - DB_PASS=${DB_PASS}
+    #   - DB_CHARSET=${DB_CHARSET}
+    ports:
+      - "172.17.0.1:9001:9001"
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:${SOFTWARE_VERSION_TAG}
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - ".postgresql/data/pgdata:/var/lib/pgdata"
