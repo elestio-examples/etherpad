@@ -3,6 +3,7 @@ services:
   etherpad:
     image: elestio/etherpad:${SOFTWARE_VERSION_TAG}
     restart: always
+    hostname: etherpad
     environment:
       DB_TYPE: postgres
       DB_HOST: postgres

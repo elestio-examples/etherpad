@@ -5,9 +5,9 @@ ports:
     targetPort: "62324"
     targetIP: "172.17.0.1"
     public: true
-    path: "/"
+    path: "/admin"
     isAuth: true
-    login: "root"
+    login: "admin"
     password: "random_password"
     loginTitle: "Etherpad"
   - protocol: "HTTPS"
@@ -24,7 +24,6 @@ ports:
     targetIP: "172.17.0.1"
     targetPort: "53649"
     public: true
-
 environments:
   - key: "SOFTWARE_VERSION_TAG"
     value: "latest"
@@ -32,7 +31,6 @@ environments:
     value: "random_password"
   - key: "ADMIN_EMAIL"
     value: "[EMAIL]"
-
 config:
   runTime: "dockerCompose"
   version: ""
