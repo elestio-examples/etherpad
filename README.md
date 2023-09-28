@@ -1,9 +1,29 @@
-# MySQL + PhpMyAdmin docker compose demo CI/CD pipeline
+# Etherpad CI/CD pipeline
 
+<a href="https://dash.elest.io/deploy?source=cicd&social=dockerCompose&url=https://github.com/elestio-examples/etherpad"><img src="deploy-on-elestio.png" alt="Deploy on Elest.io" width="180px" /></a>
 
-<a href="https://dash.elest.io/deploy?source=cicd&social=dockerCompose&url=https://github.com/elestio-examples/mariadb"><img src="deploy-on-elestio.png" alt="Deploy on Elest.io" width="180px" /></a>
+Deploy Etherpad with CI/CD on Elestio
 
-Example application and CI/CD pipeline showing how to deploy a etherpad docker compose to elestio.
+<img src="etherpad.png" style='width: 100%;'/>
+<br/>
+<br/>
 
+# Once deployed ...
 
+You can open Etherpad UI here:
 
+    URL: https://[CI_CD_DOMAIN]
+    login: root
+    password: [ADMIN_PASSWORD]
+
+You can open pgAdmin web UI here:
+
+    URL: https://[CI_CD_DOMAIN]:8475
+    email: [ADMIN_EMAIL]
+    password: [ADMIN_PASSWORD]
+
+# IMPORTANT
+
+Before you deploy your application, make sure you have a Segment.io AND a SendGrid account.
+
+If not, you won't be able to send emails and collect events
