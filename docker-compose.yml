@@ -1,7 +1,7 @@
 version: "3.5"
 services:
   etherpad:
-    image: elestio4test/etherpad:${SOFTWARE_VERSION_TAG}
+    image: elestio/etherpad:${SOFTWARE_VERSION_TAG}
     environment:
       - TITLE=${TITLE}
       - DEFAULT_PAD_TEXT=${DEFAULT_PAD_TEXT}
@@ -17,7 +17,7 @@ services:
       - postgres
 
   postgres:
-    image: elestio4test/postgres:15
+    image: elestio/postgres:15
     environment:
       - POSTGRES_DB=${POSTGRES_DB}
       - POSTGRES_USER=${POSTGRES_USER}

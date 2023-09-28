@@ -7,8 +7,8 @@ ports:
     public: true
     path: "/"
     isAuth: true
-    login: "admin@gmail.com"
-    password: "GCdsZwHJ-c4ew-jzO5EvcX"
+    login: "root"
+    password: "random_password"
 
 environments:
   - key: "SOFTWARE_VERSION_TAG"
@@ -16,7 +16,7 @@ environments:
   - key: "SOFTWARE_PASSWORD"
     value: "random_password"
   - key: "ADMIN_PASSWORD"
-    value: "GCdsZwHJ-c4ew-jzO5EvcX" 
+    value: "random_password"
   - key: "ADMIN_EMAIL"
     value: "admin@gmail.com"
   - key: "TITLE"
@@ -61,4 +61,5 @@ lifeCycleConfig:
 webUI:
   - url: "https://[CI_CD_DOMAIN]"
     label: "Etherpad"
-    
+    login: "root"
+    password: "[ADMIN_PASSWORD]"
