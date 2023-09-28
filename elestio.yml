@@ -5,7 +5,7 @@ ports:
     targetPort: "62324"
     targetIP: "172.17.0.1"
     public: true
-    path: "/admin"
+    path: "/"
     isAuth: true
     login: "admin"
     password: "random_password"
