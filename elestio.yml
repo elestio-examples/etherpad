@@ -6,10 +6,7 @@ ports:
     targetIP: "172.17.0.1"
     public: true
     path: "/"
-    isAuth: true
-    login: "admin"
-    password: "random_password"
-    loginTitle: "Etherpad"
+    isAuth: false
   - protocol: "HTTPS"
     targetProtocol: "HTTP"
     listeningPort: "8475"
@@ -48,6 +45,10 @@ lifeCycleConfig:
   preRestoreCommand: "./scripts/preRestore.sh"
   postRestoreCommand: "./scripts/postRestore.sh"
 webUI:
+  - url: "https://[CI_CD_DOMAIN]/admin"
+    label: "Etherpad Admin ui"
+    login: "admin"
+    password: "[ADMIN_PASSWORD]"
   - url: "https://[CI_CD_DOMAIN]:8475"
     label: "PgAdmin"
     login: "[ADMIN_EMAIL]"

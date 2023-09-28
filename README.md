@@ -10,10 +10,10 @@ Deploy Etherpad with CI/CD on Elestio
 
 # Once deployed ...
 
-You can open Etherpad UI here:
+You can open Etherpad Admin UI here:
 
-    URL: https://[CI_CD_DOMAIN]
-    login: root
+    URL: https://[CI_CD_DOMAIN]/admin
+    login: admin
     password: [ADMIN_PASSWORD]
 
 You can open pgAdmin web UI here:
