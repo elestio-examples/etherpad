@@ -22,6 +22,8 @@ services:
       - "172.17.0.1:62324:9001"
     depends_on:
       - postgres
+    volumes:
+      - ./data_vol:/opt/etherpad-lite      
 
   postgres:
     restart: always
@@ -32,7 +34,7 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=${ADMIN_PASSWORD}
     volumes:
-      - .postgresql/data/pgdata:/var/lib/pgdata
+      - ./postgres:/var/lib/postgresql/data
     ports:
       - 172.17.0.1:53649:5432
 
