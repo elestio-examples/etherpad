@@ -2,6 +2,7 @@ version: "3.5"
 services:
   etherpad:
     image: elestio/etherpad:${SOFTWARE_VERSION_TAG}
+    container_name: etherpad
     restart: always
     hostname: etherpad
     environment:
@@ -25,6 +26,7 @@ services:
   postgres:
     restart: always
     image: elestio/postgres:15
+    container_name: postgres
     environment:
       - POSTGRES_DB=etherpad
       - POSTGRES_USER=postgres
@@ -36,6 +38,7 @@ services:
 
   pgadmin4:
     image: dpage/pgadmin4:latest
+    container_name: pgadmin4
     restart: always
     environment:
       PGADMIN_DEFAULT_EMAIL: ${ADMIN_EMAIL}
