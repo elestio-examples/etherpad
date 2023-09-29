@@ -21,9 +21,7 @@ services:
     ports:
       - "172.17.0.1:9001:9001"
     depends_on:
-      - postgres
-    volumes:
-      - ./data_vol:/opt/etherpad-lite      
+      - postgres  
 
   postgres:
     restart: always
