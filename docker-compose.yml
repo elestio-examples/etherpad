@@ -19,7 +19,7 @@ services:
       IMPORT_EXPORT_MAX_REQ_PER_IP: 1000000
       IMPORT_EXPORT_RATE_LIMIT_WINDOW: 9000000
     ports:
-      - "172.17.0.1:62324:9001"
+      - "172.17.0.1:9001:9001"
     depends_on:
       - postgres
     volumes:
