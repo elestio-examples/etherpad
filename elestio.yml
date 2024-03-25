@@ -2,7 +2,7 @@ ports:
   - protocol: "HTTPS"
     targetProtocol: "HTTP"
     listeningPort: "443"
-    targetPort: "62324"
+    targetPort: "9001"
     targetIP: "172.17.0.1"
     public: true
     path: "/"
